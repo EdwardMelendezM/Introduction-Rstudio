@@ -40,47 +40,44 @@ peliculas_df
 
 # seleccionar un elemento del dataframe
 peliculas_df[3,2]
-peliculas_df[c(3,2),c(2,2)]
-peliculas_df[c(3,4),c('PUNTUACION','POSTERIOR_2005')]
 
 # seleccionar más de un elemento del dataframe
-peliculas_df[3,)]
-
+peliculas_df[c(3,4),c(1,2)]
+peliculas_df[c(3,4),c('PUNTUACION','POSTERIOR_2005')]
 
 # seleccionar una fila o renglón del dataframe
-
+peliculas_df[3,]
 
 # seleccionar una columna del dataframe
 
-
-
+peliculas_df[,2]
+peliculas_df[,'PUNTUACION']
+peliculas_df$NOMBRE
 
 #################################
 # práctica 3: ordenar dataframe #
 #################################
 
 # mostrar el dataframe
-
+peliculas_df
 
 # mostrar el indice de la columna de puntuacion con order
-
+order(peliculas_df$PUNTUACION)
 
 # funcion order (menor a mayor)
-
-
+orden_menor_mayor <- order(peliculas_df$PUNTUACION,decreasing = FALSE)
 
 # mostrar el dataframe ordenado
-
+peliculas_df[orden_menor_mayor,]
 
 # funcion order (mayor a menor)
-
-
+orden_mayor_menor <- order(peliculas_df$PUNTUACION,decreasing = TRUE)
 
 # mostrar el dataframe ordenado
-
+order_peliculas<-peliculas_df[orden_mayor_menor,]
 
 # guardar el dataframe ordenado
-
+order_peliculas
 
 
 # Hecho con gusto por Rafa @GonzalezGouveia
