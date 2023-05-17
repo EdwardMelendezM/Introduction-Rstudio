@@ -64,16 +64,16 @@ lista_curso[['matriz']][5,3]
 ######################################################
 
 # agregar dataframe a lista
-
+lista_curso[['data_frame']]<- peliculas_df
 
 # revisar que está el dataframe
-
+lista_curso
 
 # eliminar un elemento de lista
-
+lista_curso[['vector']]<- NULL
 
 # revisar que no está el vector
-
+lista_curso
 
 # Hecho con gusto por Rafa @GonzalezGouveia
 # Para aprender más sobre R 
